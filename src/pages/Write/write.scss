@@ -1,0 +1,116 @@
+@import '../../responsive.scss';
+.writePage {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @include md {
+        height: calc(100vh - 64px);
+    }
+
+    .titlePost {
+        font-size: 27px;
+        color: rgb(170, 169, 169);
+    }
+
+    form {
+        margin-bottom: 12px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .inputImage {
+            width: 200px;
+            height: 500px;
+            display: none;
+            background: red;
+        }
+
+        .btnSubmit {
+            width: max-content;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 12px 24px;
+            color: gray;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.13);
+        }
+        .inputText {
+            border: none;
+            font-size: 38px;
+            background: transparent;
+            font-weight: bold;
+            outline: none;
+        }
+
+        .labelContent {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            label {
+                font-size: 15px;
+            }
+            select {
+                padding: 8px;
+                border-radius: 10px;
+                background: #fff;
+                box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.13);
+            }
+        }
+        .descPlace {
+            font-size: 18px;
+            padding: 16px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.13);
+        }
+
+        .themeWrite {
+            flex: 1;
+            font-size: 18px;
+            padding: 16px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.13);
+        }
+        .contentBtnIcon {
+            flex: 1;
+            display: flex;
+
+            .contentBtn {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .btnIcon {
+                    font-size: 28px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .btnSend {
+            width: max-content;
+            border: none;
+            color: #fff;
+            background: blue;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 12px 27px;
+            margin-top: 16px;
+            cursor: pointer;
+        }
+
+        .btnSend:focus {
+            background: rgb(162, 162, 242);
+            cursor: not-allowed;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import '../../responsive.scss';
+
+.mainCategories {
+    display: flex;
+    background: #fff;
+    border-radius: 24px;
+    padding: 16px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.13);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    @include md {
+        display: none;
+    }
+
+    .linksCategori {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .links {
+            background: blue;
+            color: #fff;
+            border-radius: 24px;
+            padding: 10px 14px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .links2 {
+            border-radius: 24px;
+            padding: 10px 14px;
+            font-weight: 500;
+            font-size: 16px;
+
+            &:hover {
+                background: lightcyan;
+            }
+        }
+    }
+    .line {
+        background: #000;
+        width: 2.5px;
+        height: 25px;
+    }
+}

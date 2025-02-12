@@ -1,0 +1,29 @@
+.postMenuAction {
+    .titlePost {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .contentImg {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 0;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .loadingIndicator {
+        color: #ff5722;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .iconSvg {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,46 @@
+.singleComment {
+    padding: 16px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 32px;
+
+    .userInfo {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .titleName {
+            font-size: 15px;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .titleDays {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .deleteBtn {
+            font-size: 14px;
+            color: red;
+            font-weight: 500;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .comment {
+        margin-top: 16px;
+
+        .commentParagraph {
+            font-size: 18px;
+            color: #000;
+            line-height: 25px;
+            font-weight: 500;
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+    }
+}

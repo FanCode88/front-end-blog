@@ -1,0 +1,128 @@
+@import '../../responsive.scss';
+
+.homePage {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .homeContent {
+        display: flex;
+        gap: 16px;
+
+        .title {
+            color: blue;
+        }
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .titleContent {
+            width: 70%;
+
+            @include md {
+                width: 100%;
+            }
+
+            @include sm {
+                width: 100%;
+            }
+            .hTitle {
+                color: #000;
+                font-size: 57px;
+                font-weight: bold;
+                letter-spacing: 2px;
+
+                @include md {
+                    font-size: 42px;
+                }
+
+                @include sm {
+                    font-size: 32px;
+                }
+            }
+
+            .pTitle {
+                margin-top: 10px;
+                font-size: 27px;
+                font-weight: 500;
+                letter-spacing: 2px;
+                color: #000;
+
+                @include md {
+                    font-size: 16px;
+                }
+
+                @include sm {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .svgCircle {
+            font-size: 18px;
+            letter-spacing: 4px;
+            animation: spin 1s linear infinite;
+            animation-duration: 10000ms;
+
+            @include md {
+                display: none;
+            }
+
+            @include sm {
+                display: none;
+            }
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .btnCenter {
+            position: absolute;
+            background: blue;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 80px;
+            height: 80px;
+            border: none;
+            cursor: pointer;
+
+            @include md {
+                display: none;
+            }
+
+            @include sm {
+                display: none;
+            }
+        }
+
+        .write {
+            position: relative;
+        }
+    }
+
+    .contentPosts {
+        h1 {
+            margin: 32px 0;
+            font-size: 21px;
+            color: #333;
+            font-weight: 500;
+            letter-spacing: 4px;
+        }
+    }
+}

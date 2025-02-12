@@ -1,0 +1,157 @@
+@import '../../responsive.scss';
+
+.featuredPosts {
+    margin-top: 20px;
+    display: flex;
+
+    @include xl {
+        gap: 54px;
+        display: flex;  
+        justify-content: space-between;
+    }
+
+    @include lg {
+        gap: 54px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include md {
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include sm {
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .firstPost {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 50%;
+
+        @include lg {
+            font-size: 21px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include md {
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .details {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            h1 {
+                font-weight: 600px;
+                font-size: 18px;
+
+                @include lg {
+                    font-size: 23px;
+                }
+            }
+
+            .site {
+                color: blue;
+                font-weight: bold;
+
+                @include lg {
+                    font-size: 18px;
+                }
+            }
+
+            span {
+                color: gray;
+                font-size: 14px;
+            }
+        }
+
+        @include lg {
+            width: 50%;
+        }
+
+        .post {
+            font-size: 27px;
+            font-weight: 500;
+
+            @include lg {
+                font-size: 29px;
+                font-weight: 500;
+                width: 100%;
+            }
+        }
+    }
+
+    .secondPost {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        margin-left: 30px;
+
+        @include md {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .imageSource {
+            display: flex;
+
+            .contentPost {
+                flex-direction: column;
+                display: flex;
+                gap: 14px;
+                margin-left: 10px;
+
+                .details {
+                    display: flex;
+                    margin: 0;
+                    gap: 16px;
+                    width: 75%;
+
+                    h1 {
+                        font-weight: 600px;
+                        font-size: 18px;
+                        margin-left: 10px;
+                    }
+
+                    .site {
+                        color: blue;
+                        font-weight: bold;
+                    }
+
+                    span {
+                        color: grey;
+                        font-size: 14px;
+                    }
+                }
+                .post {
+                    font-size: 27px;
+                    margin-left: 10px;
+                    font-weight: 500;
+
+                    @include lg {
+                        font-size: 20px;
+                    }
+
+                    @include md {
+                        font-size: 18px;
+                    }
+
+                    @include sm {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

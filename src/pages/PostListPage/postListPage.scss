@@ -1,0 +1,63 @@
+@import '../../responsive.scss';
+
+.postListPage {
+    @include xl {
+        display: flex;
+        flex-direction: column;
+    }
+    .titlePost {
+        margin-bottom: 32px;
+        margin-top: 20px;
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    .contentPost {
+        display: flex;
+        @include md {
+            flex-direction: column-reverse;
+            display: flex;
+            gap: 32px;
+        }
+
+        .secondContainer .hidden {
+            padding: 0 26px;
+            position: sticky;
+            top: 16px;
+
+            @include md {
+                display: none;
+            }
+        }
+    }
+
+    .btnToggle {
+        background: blue;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 12px 24px;
+        margin-bottom: 16px;
+        cursor: pointer;
+
+        @include xxl {
+            display: none;
+        }
+
+        @include xl {
+            display: none;
+        }
+
+        @include md {
+            display: block;
+            width: max-content;
+        }
+
+        @include sm {
+            display: block;
+            width: max-content;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.sideMenu {
+    .item {
+        margin-bottom: 16px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .item1 {
+        margin-bottom: 16px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 24px;
+    }
+
+    .filterCategory {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 15px;
+
+        label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+
+            .labelInput {
+                appearance: none;
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                border: 1px solid blue;
+                background: white;
+                border-radius: 3px;
+            }
+
+            .labelInput:checked {
+                background-color: blue;
+            }
+        }
+    }
+    .item2 {
+        margin-bottom: 16px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 24px;
+    }
+
+    .categories {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 15px;
+
+        .categoriesLinks {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}

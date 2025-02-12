@@ -1,0 +1,104 @@
+@import '../../responsive.scss';
+
+.navbar {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include md {
+        height: 84px;
+    }
+    .contentNavbar {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        span {
+            font-size: 26px;
+            font-weight: bold;
+        }
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .mobileMenu {
+        display: flex;
+
+        button {
+            font-size: 28px;
+            cursor: pointer;
+            border: none;
+
+            @include xxl {
+                display: none;
+            }
+            @include md {
+                display: flex;
+            }
+        }
+    }
+
+    .deskMenu {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 17px;
+        font-weight: bold;
+
+        @include md {
+            gap: 30px;
+            display: none;
+        }
+
+        @include sm {
+            display: none;
+        }
+
+        .loginBtn {
+            padding: 13px 23px;
+            border-radius: 50px;
+            border: none;
+            background: blue;
+            color: #fff;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+    .slider {
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+
+            @include xxl {
+                display: none;
+            }
+
+            @include md {
+                display: flex;
+            }
+
+            @include sm {
+                display: flex;
+            }
+
+            .loginBtn {
+                padding: 13px 23px;
+                border-radius: 50px;
+                border: none;
+                background: blue;
+                color: #fff;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}

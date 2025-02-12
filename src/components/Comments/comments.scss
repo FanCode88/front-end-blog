@@ -1,0 +1,46 @@
+@import '../../responsive.scss';
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 70%;
+
+    .title {
+        font-size: 23px;
+        letter-spacing: 2px;
+        color: gray;
+        text-decoration: underline;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+        width: 100%;
+
+        .textMessage {
+            background: #fff;
+            border-radius: 10px;
+            font-size: 18px;
+            color: #000;
+            width: 100%;
+            padding: 16px;
+        }
+        .btnSendMessage {
+            padding: 12px 24px;
+            background: blue;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+    @include lg {
+        width: 70%;
+    }
+}

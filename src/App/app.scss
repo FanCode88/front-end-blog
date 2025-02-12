@@ -1,0 +1,19 @@
+@import '../responsive.scss';
+
+.app {
+    @include xxl {
+        padding: 0 256px;
+    }
+    @include xl {
+        padding: 0 128px;
+    }
+    @include lg {
+        padding: 0 64px;
+    }
+    @include md {
+        padding: 0 32px;
+    }
+    @include sm {
+        padding: 0 16px;
+    }
+}
